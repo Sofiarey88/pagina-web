@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo4.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
+    <title>Prueba de Formulario</title>
+</head>
+<body>
+        <h1>Trabajo: Prueba de Controles</h1>
+        <br>
+<section>
+    <h3 id="h3ayuda"></h3>
+    <form action="../index.html" method="get">
+        <label for="txtNombre">Nombre(textbox)</label>
+        <input type="text" name="txtNombre" id="txtNombre" 
+        placeholder="escriba acá" onfocus="cargarAyuda()">
+        <br>
+        <label for="txtApellido">Apellido(textbox)</label>
+        <input type="text" name="txtApellido" id="txtApellido" 
+        placeholder="escriba acá" onfocus="cargarAyuda2()">
+        <br>
+        <label for="chkCasado">Casado(checkBox)</label>
+        <input type="checkbox" name="chkCasado" id="chkCasado">
+        <br>
+        <label for="datFechaDeNacimiento">Fecha de Nacimiento(date)</label>
+        <input type="date" name="datFechaDeNacimiento" id="datFechaDeNacimiento">
+        <br>
+        <label for="dttHorarioTicket">Horario Ticket(datetime-local))</label>
+        <input type="datetime-local" name="dttHorarioTicket" id="dttHorarioTicket">
+        <br>
+        <label for="timHorarioTicket">Horario Ticket(time)</label>
+        <input type="time" name="timHorarioTicket" id="timHorarioTicket">
+        <br>
+        <label for="txtPassword">Password(textBox)</label>
+        <input type="password" name="txtPassword" id="txtPassword">
+        <br>
+        <label for="txtEmail">Email(email)</label>
+        <input type="email" name="txtEmail" id="txtEmail" required>
+        <br>
+        <label for="cboLocalidad">Localidad(select)</label>
+        <select name="cboLocalidad" id="cboLocalidad">
+            <option value="San Justo">San Justo</option>
+            <option value="Gobernador Crespo">Gobernador Crespo</option>
+            <option value="Marcelino Escalada">Marcelino Escalada</option>
+        </select>
+        <br>
+        <label for="numHijos">Cantidad de Hijos(number)</label>
+        <input type="number" name="numHijos" id="numHijos">
+        <br>
+        <label for="radSexo">Sexo(radio)</label>
+        <label for="radSexoMasculino">Masculino</label>
+        <input type="radio" name="radSexo" id="radSexoMasculino" value="Masculino">
+        <label for="radSexoFemenino">Femenino</label>
+        <input type="radio" name="radSexo" id="radSexoFemenino" value="Femenino">
+        <label for="radSexoIndefinido">Indefinido</label>
+        <input type="radio" name="radSexo" id="radSexoIndefinido" value="Indefinido">
+        <br>
+        <label for="filDocumento">Documento(file)</label>
+        <input type="file" name="filDocumento" id="filDocumento">
+        <br><br>
+        <label for="imgFoto">Imagen(image)</label>
+        <input type="image" name="imgFoto" id="imgFoto" src="../imgs/mishi.jpg">
+        <br>
+        <label for="rlSitio">Sitio(url)</label>
+        <input type="url" name="rlSitio" id="rlSitio">
+        <br><br>
+        <label for="btnLimpiar">Resetear Valores(limpiar)</label>
+        <input class="button2" type="reset" name="btnLimpiar" value="Limpiar Controles">
+        <br><br><br>
+        <input class="button" type="hidden" name="hidColor" value="black">  
+        <input class="button" type="submit" value="Enviar">
+    </form>
+    <br>
+    <section class="section-volver">
+        <a href="../index.html">Click acá para volver a la página principal</a>    
+    </section>
+</section>
+
+    <script type="text/javascript" src="../js/codigo.js"></script>
+    <section class="section-volver">
+        <a href="index.html">Click para volver a la página principal</a>
+        
+        </section>
+</body>
+</html>
